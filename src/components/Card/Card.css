@@ -1,0 +1,57 @@
+.cards {
+  display: inline-block;
+  transition: transform ease-in 0.2s;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0.19rem;
+  min-width: 200px;
+  height: 300px;
+  cursor: pointer;
+  height: 300px;
+  z-index: 0;
+  border: 1px solid rgb(99, 99, 99);
+}
+.cards:hover {
+  transform: scale(1.2);
+  z-index: 1000;
+  box-shadow: rgb(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card_image {
+  height: 300px;
+}
+.card_overlay {
+  position: absolute;
+  padding: 0 1rem 1rem 1rem;
+  bottom: 0px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 0;
+  transition: opacity ease-in 0.2s;
+}
+.card_overlay:hover {
+  opacity: 1;
+}
+.card_title {
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.card_runtime {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.card_rating {
+  float: right;
+}
+.card_description {
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
