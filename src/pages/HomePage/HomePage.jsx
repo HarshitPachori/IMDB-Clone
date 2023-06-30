@@ -8,14 +8,14 @@ import api_key from "../../constants/constant";
 
 function HomePage() {
   const [popularMovies, setPopularMovies] = useState([]);
-  console.log("apiKey  " + api_key);
+ 
   useEffect(() => {
     fetch(
       ` https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.results);
+        
         setPopularMovies(data.results);
       });
   }, []);

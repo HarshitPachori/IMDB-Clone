@@ -24,7 +24,7 @@ function MovieList() {
     )
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data.results);
+        
         setMovieList(data.results);
       });
   };
